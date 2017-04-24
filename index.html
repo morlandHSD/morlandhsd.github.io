@@ -1,0 +1,687 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0090)http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2016/5/18/492afb310663dc4b335a221e5d147f3c/ -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>NU cwyz CEG8513 HSD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CEG8513 HSD">
+<meta name="keywords" content=" html5, free template, free bootstrap, html5, css3, mobile first, responsive">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="./files/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./files/css/font-awesome.min.css">
+<!-- Animate.css -->
+<link rel="stylesheet" href="./files/css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="./files/css/icomoon.css">
+<!-- Simple Line Icons -->
+<link rel="stylesheet" href="./files/css/simple-line-icons.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="./files/css/bootstrap.css">
+<!-- Style -->
+<link rel="stylesheet" href="./files/css/style.css">
+<!-- Button Hovers -->
+<link href="./files/css/hover-min.css" rel="stylesheet">
+<!-- font-awesome -->
+<link href="./files/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./files/css/style1.css">
+
+<style>
+.overlay-figure {
+	position: relative;
+	left: 25%;
+/*
+   You can safely give the entire complex a size, or just a width or height. If a
+   size isn't specified then the overlay-figure-content element's size defines
+   the overall size (i.e. the IMG element defines the overall size).
+   width: 480px;
+   height: 320px;
+   */
+   display: table;
+   border: solid 1px black;
+}
+.overlay-figure-content {
+	width: 100%;
+	height: 100%;
+	-webkit-transform: scale(1.0) translateZ(0);
+	-moz-transform: scale(1.0) translateZ(0);
+	transform: scale(1.0) translateZ(0);
+	-webkit-transition: -webkit-transform 0.5s ease 0.25s;
+	-moz-transition:    -moz-transform 0.5s ease 0.25s;
+	transition:         transform 0.5s ease 0.25s;
+}
+.overlay-figure:hover
+.overlay-figure-content {
+	-webkit-transform: scale(0.95) translateZ(0);
+	-moz-transform: scale(0.95) translateZ(0);
+	transform: scale(0.95) translateZ(0);
+}
+.overlay-figure-content > img {
+	display: block;
+}
+.overlay-figure-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	background-image: linear-gradient(to bottom, rgba(38,50,72, 0.5), rgba(38,50,72, 0.85));
+}
+.overlay-figure:hover
+.overlay-figure-background {
+	opacity: 1;
+}
+.overlay-figure-caption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	font-family: adobe-clean, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: white;
+	opacity: 0;
+	-webkit-transition: opacity ease 0.25s;
+	-moz-transition: opacity ease 0.25s;
+	transition: opacity ease 0.25s;
+}
+.overlay-figure:hover
+.overlay-figure-caption {
+	opacity: 1;
+}
+.overlay-figure-caption
+.contents {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.overlay-figure-caption
+.contents-stack {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 5%;
+}
+.overlay-figure-caption
+.title {
+	display: block;
+	margin-bottom: 0;
+	opacity: 0;
+	-webkit-transform: translateY(-100%) translateZ(0);
+	-moz-transform: translateY(-100%) translateZ(0);
+	transform: translateY(-100%) translateZ(0);
+	-webkit-transition: -webkit-transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
+	-moz-transition:    -moz-transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
+	transition:         transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
+}
+.overlay-figure:hover 
+.title {
+	opacity: 1;
+	-webkit-transform: translateY(0) translateZ(0);
+	-moz-transform: translateY(0) translateZ(0);
+	transform: translateY(0) translateZ(0);
+}
+.overlay-figure
+.separator {
+	display: block;
+	margin: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 2px;
+	width: 30%;
+	background-color: white;
+	-webkit-transform: scaleX(0) translateZ(0);
+	-moz-transform: scaleX(0) translateZ(0);
+	transform: scaleX(0) translateZ(0);
+	-webkit-transition: -webkit-transform 0.25s ease 0.25s;
+	-moz-transition:    -moz-transform 0.25s ease 0.25s;
+	transition:         transform 0.25s ease 0.25s;
+}
+.overlay-figure:hover
+.separator {
+	-webkit-transform: scaleX(1) translateZ(0);
+	-moz-transform: scaleX(1) translateZ(0);
+	transform: scaleX(1) translateZ(0);
+}
+.overlay-figure-caption 
+.text {
+	display: block;
+	margin-top: 0;
+	opacity: 0;
+	-webkit-transform: translateY(100%) translateZ(0);
+	-moz-transform: translateY(100%) translateZ(0);
+	transform: translateY(100%) translateZ(0);
+	-webkit-transition: -webkit-transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
+	-moz-transition:    -moz-transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
+	transition:         transform 0.5s ease 0.25s, opacity 0.15s ease 0.25s;
+}
+.overlay-figure:hover
+.text {
+	opacity: 1;
+	-webkit-transform: translateY(0) translateZ(0);
+	-moz-transform: translateY(0) translateZ(0);
+	transform: translateY(0) translateZ(0);
+}
+</style>
+
+</head>
+<body>
+	<header role="banner" id="template-header" class="">
+		<div class="fluid-container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<!-- Mobile Toggle Menu Button -->
+					<a href = "http://www.ncl.ac.uk/"><img class="img-responsive" src="./files/img/newcastle.jpg" width="196" height="60"></a> 
+				</div>
+				<div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a data-nav-section="home"><span>Home</span></a></li>
+						<li class=""><a data-nav-section="morland"><span>Morland</span></a></li>
+						<li class=""><a data-nav-section="GIS"><span>GIS</span></a></li>
+						<li class=""><a data-nav-section="Model"><span>Model</span></a></li>
+						<li class=""><a data-nav-section="VBA"><span>VBA</span></a></li>
+						<li class=""><a data-nav-section="team"><span>Team</span></a></li>
+						<li class=""><a data-nav-section="faq"><span>FAQ</span></a></li>
+						<li><a data-nav-section="contact"><span>Contact</span></a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+
+	<section id="template-home" data-section="home" class="animated">
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate fadeInUp animated">Hydroinformatic System Development</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate fadeInUp animated">
+							<h3>Overview of the coursework</h3>
+							<span class="circle1">o</span>
+							<h3>A hydrological land use and climate change modelling system for The Morland Catchment Information System (CIS)</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<canvas id="canvas"></canvas>
+
+		<script type="text/javascript">
+		var canvas = document.getElementById('canvas');  
+		var ctx = canvas.getContext('2d');  
+		window.requestAnimFrame = (function(){  
+			return  window.requestAnimationFrame       ||  
+			window.webkitRequestAnimationFrame ||  
+			window.mozRequestAnimationFrame    ||  
+			function( callback ){  
+				window.setTimeout(callback, 1000 / 60);  
+			};  
+		})();  
+		var step = 0;  
+		var lines = ["rgba(0,222,255, 0.2)",  
+		"rgba(157,192,249, 0.2)",  
+		"rgba(0,168,255, 0.2)"];  
+		function loop(){  
+			canvas.width = 0.99*window.innerWidth;
+			canvas.height = 0.55*window.innerHeight;
+			ctx.clearRect(0,0,canvas.width,canvas.height);  
+			step++;  
+			for(var j = lines.length - 1; j >= 0; j--) {  
+				ctx.fillStyle = lines[j];  
+				var angle = (step+j*45)*Math.PI/180;  
+				var deltaHeight   = Math.sin(angle) * 50;  
+				var deltaHeightRight   = Math.cos(angle) * 50;  
+				ctx.beginPath();  
+				ctx.moveTo(0, canvas.height/2+deltaHeight);  
+				ctx.bezierCurveTo(canvas.width /2, canvas.height/2+deltaHeight-50, canvas.width / 2, canvas.height/2+deltaHeightRight-50, canvas.width, canvas.height/2+deltaHeightRight);  
+				ctx.lineTo(canvas.width, canvas.height);  
+				ctx.lineTo(0, canvas.height);  
+				ctx.lineTo(0, canvas.height/2+deltaHeight);  
+				ctx.closePath();  
+				ctx.fill();  
+			}  
+			requestAnimFrame(loop);  
+		}  
+		loop(); 
+		</script>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+	</section>
+
+	
+	<section id="template-morland" data-section="morland" class="animated">
+		<br/>
+		<br/>
+		<br/>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate fadeInUp animated">Project Summary</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate fadeInUp animated">
+							<h3>To show our Hydroinformatic System, we firstly create a hydrological bucket model and GUI based on VBA and then build a land use change scenario tool for the Morland. Design this web page for the project, and publish it via Github. There is a Google map below, located the Morland. Section GIS includes some graphs of Arc GIs. Clicking the "Excel Download" in the VBA section to redirect and download excel file. </h3>
+							<span class="circle1">o</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="map" style="width:100%; height:500px;"></div>
+		<script>
+		function initMap() {
+			var myLatLng = {lat: 54.9792, lng: -1.6147};
+			var contentString = 
+			'<p><b>Newcastle University</b>, (Officially, the <b>University of Newcastle upon Tyne</b>) is a public research university located in Newcastle upon Tyne in the North-East of England.' +'  Newcastle University is a red brick university and is a member of the Russell Group, an association of prestigious research-intensive UK universities. The university has one of the largest EU research portfolios in the UK.[6] Newcastle attracts over 20,000 students from more than 120 different countries.</p>'+
+			'<a href="http://www.ncl.ac.uk">'+
+			'http://www.ncl.ac.uk'+
+			'</div>'+
+			'</div>';
+			var map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: 54.8, lng: -4},
+				zoom: 7
+			});
+			var infowindow = new google.maps.InfoWindow({
+				content: contentString
+			});
+			var marker = new google.maps.Marker({
+				position: myLatLng,
+				map: map,
+				title: 'Our University！'
+			});
+			marker.addListener('click', function() {
+				infowindow.open(map, marker);
+			});
+			var docLayer = new google.maps.KmlLayer({
+				url: 'https://morlandhsd.github.io/doc.kml',
+				map: map
+			});
+		}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl1I-MR-TWGGBvnHluXpmkSoMwbdfdqV8&callback=initMap&language=en&region=en"
+		async defer></script>
+		<br/>
+		<br/>
+                <br/>
+		<br/>
+		<br/>
+                <br/>
+		<br/>
+		<br/>
+	</section>
+
+
+	<section id="template-GIS" data-section="GIS" class="animated">
+                <br/>
+		<br/>
+		<br/>
+		<br/>
+		<figure class="overlay-figure">
+			<div class="overlay-figure-content">
+				<img src="./files/img/catchmentraw.jpg">
+				<div class="overlay-figure-background"></div>
+			</div>
+			<figcaption class="overlay-figure-caption">
+				<div class="contents"> 
+					<div class="contents-stack">
+						<h2 class="title">Brief Info about Morland Catchment</h2>
+						<div class="separator"></div>
+						<p class="text">The Morland catchment is a 12.7 km2 sub-catchment of the Eden, located in Cumbria in the North West of England, and it’s a Demonstration Test Catchment (see EdenDTC.org). It is split into three sub-catchments, and each of them has a stream gauge at the outlet of the catchment. Besides, there are two rain gauges and an automatic weather gauge in the Morland catchment.</p>
+					</div>
+				</div>
+			</figcaption>
+		</figure>
+		<div style="text-align:center;clear:both"></div>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+	</section>
+
+	
+	<section id="template-Model" data-section="Model" class="animated">
+                <br/>
+		<br/>
+		<br/>
+		<br/>
+		<div id="jquery-script-menu"> </div>
+		<div class="slider">
+			<div class="slider-container">
+				<div class="slider-wrapper">
+					<div class="slide"> <img src="./files/img/scenario00.jpg" alt="jQuery Slider with CSS Transitions"> </div>
+					<div class="slide"> <img src="./files/img/scenario01.jpg" alt="jQuery Slider with CSS Transitions"> </div>
+					<div class="slide"> <img src="./files/img/scenario02.jpg" alt="jQuery Slider with CSS Transitions"> </div>
+					<div class="slide"> <img src="./files/img/scenario03.jpg" alt="jQuery Slider with CSS Transitions"> </div>
+				</div>
+			</div>
+		</div>
+		<script src="./files/js/jquery-1.8.3.min.js"></script> 
+		<script src="./files/js/slider.js"></script> 
+		<script type="text/javascript">
+		(function() {
+			Slider.init({
+				target: $('.slider'),
+				time: 3000
+			});
+		})();
+		</script>
+		<div style="text-align:center;clear:both;"></div>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+	</section>
+
+
+	<section id="template-VBA" data-section="VBA" class="animated">
+		<div class="template-VBA">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate fadeInUp animated">VBA in Excel</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext">
+								<span class="circle1">o</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="box-VBA">
+							<i class="fa fa-bolt to-animate-2 bounceIn animated"></i>
+							<div class="template-post to-animate fadeInUp animated">
+								<h3>Calculation Explanation</h3>
+								<p>Runoff = Interflow + overland flow + baseflow <br/>
+									Interflow = Status * A, A varies from 0 to 1<br/>
+									Baseflow = constant<br/>
+									Total FC = ∑ Land use * Percentage<br/>
+									Temp SM(i+1)=Status Depth(i)+Rain(i)-Evaporation(i)-Interflow(i)-Baseflow<br/>
+									IF(Temp SM(i+1)>Total FC)<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status Depth(i+1) = Total FC<br/>
+									ELSE IF(Temp SM(i+1)<0)<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status Depth(i+1) = 0<br/>
+									ELSE <br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status Depth(i+1) = Temp SM(i+1)
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="box-VBA">
+							<i class="fa fa-paper-plane-o to-animate-2 bounceIn animated"></i>
+							<div class="template-post to-animate fadeInUp animated">
+								<h3>Code Example</h3>
+								<p>For y = 2 To 367 <br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Statement,eg: Set valrain = Worksheets("Data").Cells(j, 6)<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If...Then<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Statement,eg: Worksheets("Data").Cells(j, 8) = FC<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ElseIF...Then<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Statement,eg: Worksheets("Data").Cells(j, 8) = 0<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Else<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Statement,eg: Worksheets("Data").Cells(j, 8) = temp<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End If<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Statement,eg: Worksheets("Data").Cells(j, 10) = Overflow + &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Baseflow + Interflow<br/>
+									Next y<br/>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="call-to-action text-center to-animate fadeInUp animated">
+					<a href="https://1drv.ms/x/s!AuwelSXrVRaOjAR4TpBcLCIOTpqt" class="btn btn-learn">Excel Online</a>
+					<a href="https://morlandhsd.github.io/Morland_data.xlsm" class="btn btn-learn">Excel Download</a>
+					<a href="https://morlandhsd.github.io/poster.pdf" class="btn btn-learn">Poster Download</a>
+				</div>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+			<br/>
+		<br/>
+		<br/>
+		</section>	
+
+
+		<section id="template-team" data-section="team" class="animated">
+			<div class="template-team">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 section-heading text-center">
+							<h2 class="to-animate fadeIn animated">Meet The Team</h2>
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 subtext">
+									<h3>There are four Chinese members in our group, shown as follow. All of us are students of Civil Engineering & Geosciences in Newcastle University.</h3>
+									<span class="circle1">o</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-3">
+							<div class="team-box text-center to-animate-2 fadeInUp animated">
+								<div class="user"><img class="img-reponsive" src="./files/img/person3.jpg" alt="Roger Garfield"></div>
+								<h3>Peng Yan</h3>
+								<span class="position"> Web Developver, Leader</span>
+								<p>I combine html5, CSS and Javascipt to design this new web page. The homepage shows the water waves via canvas. For the VBA part, click the button for the excel online.</p>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="team-box text-center to-animate-2 fadeInUp animated">
+								<div class="user"><img class="img-reponsive" src="./files/img/person1.jpg" alt="Roger Garfield"></div>
+								<h3>Hangmei Chen</h3>
+								<span class="position">GIS Developer</span>
+								<p>I make the map with Arc-GIS. Except connecting XY table with the DEM and creating a series of derived map properties, I set flow direction, fill the sink, run the model and export maps.</p>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="team-box text-center to-animate-2 fadeInUp animated">
+								<div class="user"><img class="img-reponsive" src="./files/img/person2.jpg" alt="Roger Garfield"></div>
+								<h3>Jun Wang</h3>
+								<span class="position">VBA Programmer</span>
+								<p>After importing GIS data, I classify the data of land use for original and three different scenarios, calculate land uses percentage, add buttons to modify land uses distribution.</p>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="team-box text-center to-animate-2 fadeInUp animated">
+								<div class="user"><img class="img-reponsive" src="./files/img/person4.jpg" alt="Roger Garfield"></div>
+								<h3>Pu Zhang</h3>
+								<span class="position">Technical Assistant</span>
+								<p>I use VBA code and UserForm function to show the three land use scenarios and the image of original catchment of Morland in Excel. Also, I make a poster for our coursework.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br/>
+		<br/>
+		<br/>
+		</section>
+
+		<section id="template-faq" data-section="faq" class="animated">
+			<div class="template-faq">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 section-heading text-center">
+							<h2 class="to-animate fadeIn animated">Common Questions</h2>
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 subtext">
+									<h3 class="question-header to-animate fadeIn animated">Everything you need to know before you get started</h3>
+									<span class="circle1">o</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="box-faq to-animate-2 fadeInUp animated">
+								<h3 class="section-main-common">What is the bucket model?</h3>
+								<p>The bucket model is that we create a volume of soil in the form of a bucket. And for each time step, we will add rainfall and deduct evaporation to calculate the amount of water in the soil bucket. And at time zero, the assumption is that the bucket is full, so we have water depth=the field capacity.</p>
+							</div>
+							<div class="box-faq to-animate-2 fadeInUp animated">
+								<h3 class="section-main-common">What is hydrological model?</h3>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+							</div>
+							<div class="box-faq to-animate-2 fadeInUp animated">
+								<h3 class="section-main-common">How can I run the model?</h3>
+								<p>After you download and open the model file (Online Excel doesn't enable Macros), you can change the distribution of land uses, and then run the model to get hydrological data and profile under different conditions. Considering thousands of data, the model simulates two kinds of units, including mm/day and mm/hour. </p>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="box-faq to-animate-2 fadeInUp animated">
+								<h3 class="section-main-common">Why use VBA in Excel in Windows system?</h3>
+								<p>For Windows system, there is no limit to use code to make applications do things. However, sometimes Mac cannot load visual basic for applications. For example, it's only possible to create a VBA Userform in previous versions of Mac Excel.</p>
+							</div>
+							<div class="box-faq to-animate-2 fadeInUp animated">
+								<h3 class="section-main-common">What is a Digital Elevation Model(DEM)?</h3>
+								<p>A digital elevation model is a regularly-spaced bare-earth raster grid referenced to a common vertical datum. For hydrologic modelling, a DEM is used to delineate watersheds, calculate flow accumulation and find out flow direction.</p>
+							</div>
+							<div class="box-faq to-animate-2 fadeInUp animated">
+								<h3 class="section-main-common">How to use VBA in Excel?</h3>
+								<p>In Visual Basic Editor(VBE), insert module and add VBA code. Save the file type as Excel Macro-Enabled Workbook. In order to run the added VBA code, press Alt+F8 to open the "Macro" dialog and select the wanted macro from the "Macro Name" list and click the "Run" button.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br/>
+		<br/>
+		<br/>
+		</section>
+
+
+		<section id="template-footer" data-section="contact" class="animated">
+                <br/>
+		<br/>
+			<div class="template-trusted">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 section-heading text-center">
+							<h2 class="to-animate fadeIn animated">Trusted By</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-sm-3 col-xs-6 col-sm-offset-0 col-md-offset-1">
+							<div class="partner-logo to-animate-2 bounceIn animated">
+								<img src="./files/img/logo1.png" alt="Partners" class="img-responsive">
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-3 col-xs-6">
+							<div class="partner-logo to-animate-2 bounceIn animated">
+								<img src="./files/img/logo2.png" alt="Partners" class="img-responsive">
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-3 col-xs-6">
+							<div class="partner-logo to-animate-2 bounceIn animated">
+								<img src="./files/img/logo3.png" alt="Partners" class="img-responsive">
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-3 col-xs-6">
+							<div class="partner-logo to-animate-2 bounceIn animated">
+								<img src="./files/img/logo4.png" alt="Partners" class="img-responsive">
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-12 col-xs-12">
+							<div class="partner-logo to-animate-2 bounceIn animated">
+								<img src="./files/img/logo5.png" alt="Partners" class="img-responsive">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 to-animate fadeIn animated">
+						<h3 class="section-header section-title">About Us</h3>
+						<p>NUcwyz Group has four members including HangMei, Jun, Peng and Pu. Receiving education in China, France and the United Kingdom, we are passionate about bringing inspiring products.</p>
+						<p class="copy-right">© 2017 NUcwyz Group. <br>All Rights Reserved. <br>
+							Designed by Peng Yan
+						</p>
+					</div>
+
+					<div class="col-md-4 to-animate fadeIn animated">
+						<h3 class="section-header section-title">Our Address</h3>
+						<ul>
+							<li><i class="fa fa-home" aria-hidden="true"></i> &nbsp;Newcastle upon Tyne NE1 7RU</li>
+							<li><i class="fa fa-address-book" aria-hidden="true"></i> &nbsp;+44 0123456789</li>
+
+							<li><i class="fa fa-envelope-open"></i><a href="http://www.hotmail.com"> &nbsp;P.Yan2@newcastle.ac.uk</a></li>
+
+							<li><i class="fa fa-link" aria-hidden="true"></i><a href="http://www.ncl.ac.uk/"> &nbsp;http://www.ncl.ac.uk/</a></li>
+						</ul>
+						<br/>
+						<h3 class="section-header section-title">Connect with Us</h3>
+						<ul class="social-media">
+							<li><a href="https://en-gb.facebook.com/login/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="https://twitter.com/?lang=en-gb"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.google.co.uk/"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 to-animate fadeIn animated">
+						<h3 class="section-header section-title">Drop us a line</h3>
+						<div id="message"></div>
+						<form class="contact-form" method="post" name="contactform" id="contactform">
+							<div class="form-group">
+								<label for="name" class="sr-only">Name</label>
+								<input type="text" name="name" class="form-control" id="name" placeholder="Name">
+							</div>
+							<div class="form-group">
+								<label for="email" class="sr-only">Email</label>
+								<input type="email" name="email" class="form-control" id="email" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<label for="message" class="sr-only">Message</label>
+								<textarea name="comments" class="form-control" id="comments" rows="7" placeholder="Message"></textarea>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- jQuery -->
+		<script src="./files/js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="./files/js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="./files/js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="./files/js/jquery.waypoints.min.js"></script>
+		<!-- Stellar Parallax -->
+		<script src="./files/js/jquery.stellar.min.js"></script>
+		<!-- Owl Carousel -->
+		<script src="./files/js/owl.carousel.min.js"></script>
+		<!-- Modernizr JS -->
+		<script src="./files/js/modernizr-2.6.2.min.js"></script>
+		<script src="./files/js/prefixfree.min.js"></script>
+
+		<!-- Main JS (Do not remove) -->
+		<script src="./files/js/main.js"></script>
+
+
+
+
+	</body></html>
